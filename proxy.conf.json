@@ -1,0 +1,19 @@
+{
+    "/back_end_courses": {
+      "target": "http://localhost:8080/",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/back_end_courses": "courses"
+      }
+    },
+
+    "/back_end_users": {
+        "target": "http://localhost:8080/",
+        "secure": false,
+        "changeOrigin": true,
+        "pathRewrite": {
+          "^/back_end_users": "users"
+        }
+      }
+  }

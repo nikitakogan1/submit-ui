@@ -1,0 +1,17 @@
+[
+    {
+      "assignmentId": 1,
+      "assignmenDeadLine": "17.04.2021",
+      "assignmentName": "bla3"
+    },
+    {
+      "assignmentId": 2,
+      "assignmenDeadLine": "17.04.2021",
+      "assignmentName": "bla2"
+    },
+    {
+      "assignmentId": 3,
+      "assignmenDeadLine": "17.04.2021",
+      "assignmentName": "bla1"
+    }
+  ]

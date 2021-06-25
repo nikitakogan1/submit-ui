@@ -1,0 +1,40 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle}}
+  </div>
+  <div class='card-body'>
+    <div class='row'>
+      <div class='col-md-2'>Filter by:</div>
+      <div class='col-md-4'>
+        <input type='text'
+               [(ngModel)]='listFilter' />
+      </div>
+    </div>
+    <div class='row'
+         *ngIf='listFilter'>
+      <div class='col-md-6'>
+        <h4>Filtered by: {{listFilter}}</h4>
+      </div>
+    </div>
+    <div class='table-responsive'>
+      <table class='table'
+             *ngIf='students.length'>
+        <tbody>
+          <tr *ngFor='let student of filteredStudents'>
+            <td>
+              <a [routerLink]="['/students', student.user_name]">
+                {{ student.user_name }}
+              </a>
+              <td> {{ student.last_name}} </td>
+              <td> {{ student.first_name}} </td>
+              <td> {{ student.email}} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div *ngIf='errorMessage'
+     class='alert alert-danger'>
+  Error: {{ errorMessage }}
+</div>

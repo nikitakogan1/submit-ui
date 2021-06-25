@@ -1,0 +1,20 @@
+
+[
+  {
+      "created_by": "system",
+      "created_on": "2021-06-24T12:15:02.2661206Z",
+      "updated_by": "system",
+      "updated_on": "2021-06-24T12:15:02.2661206Z",
+      "user_name": "admin",
+      "first_name": "dfg",
+      "last_name": "fgdf",
+      "password": "h2to9aF+M/CfKEQuT6dIl0zTMj6t",
+      "email": "dfasdasdasdg",
+      "message_box": "NK4qiSJR0dRHLK2u",
+      "roles": {
+          "elements": {
+              "admin": {}
+          }
+      }
+    }
+  ]

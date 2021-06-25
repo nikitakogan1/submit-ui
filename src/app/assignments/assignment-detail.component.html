@@ -1,0 +1,39 @@
+<div class='card'>
+  <div class='card-header'>
+    {{pageTitle + ': ' + assignment?.assignmentName}}
+  </div>
+  <div class='card-body'
+       *ngIf='assignment'>
+    <div class='row'>
+      <div class='col-md-8'>
+        <div class='row'>
+          <div class='col-md-4'>ID:</div>
+          <div class='col-md-8'>{{assignment.assignmentId}}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Name:</div>
+          <div class='col-md-8'>{{assignment.assignmentName | lowercase }}</div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>Deadline:</div>
+          <div class='col-md-8'>{{assignment.assignmentDeadLine}}</div>
+        </div>
+      </div>
+    </div>
+    <button (click)="submitOnClick()">
+      Submit assignment
+    </button>
+    <button (click)="testOnClick()">
+      Submit test
+    </button>
+    <button (click)="testOnClick()">
+      Build assignment
+    </button>
+    <button (click)="testOnClick()">
+      Test assignment
+    </button>
+    <button (click)="testOnClick()">
+      Appeal
+    </button>
+  </div>
+</div>
